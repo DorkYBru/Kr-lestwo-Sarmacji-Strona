@@ -1,0 +1,197 @@
+body {
+	background: linear-gradient(-90deg, rgb(27,141,227),rgb(237,28,36));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.zdj{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 35%;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section .wave {
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    Left: 0;
+    backgound: url('https://raw.githubusercontent.com/DorkYBru/PrismarineProject/main/asstes/waves/wave-top.png');
+    animation: animate 10s linear infinite;
+}
+
+section .wave:before {
+    content: '';
+    width: 100%;
+    height: 143px;
+    background: url('https://github.com/DorkYBru/PrismarineProject/raw/main/asstes/waves/wave-top-opacity.png');
+    position: absolute;
+    top: 0;
+    Left: 0;
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+}
+
+section .wave:after {
+    content: '';
+    width: 100%;
+    height: 143px;
+    background: url('https://github.com/DorkYBru/PrismarineProject/raw/main/asstes/waves/wave-top-opacity.png');
+    position: absolute;
+    top: 0;
+    Left: 0;
+    opacity: 0.4;
+    animation-delay: 0.6s;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 1280px;
+    }
+}
+
+@keyframes animate-reverse {
+    0% {
+        background-position: 1280px;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+.footertext {
+    font-family: SweetSensations;
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    left: 40%;
+    width: 20%;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+    color: white;
+}
+.text-color{
+    color:white;
+}
+.text{
+    text-align: left;
+    position: absolute;
+    top: 12%;
+    width: 50%;
+    left: 10%;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.text2{
+    text-align: right;
+    left: 50%;
+    position: absolute;
+    top: 27%;
+    width: 30%;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.big{
+    font-size: 20cm;
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+
+  @keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  } 
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInRight {
+  0% {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  } 
